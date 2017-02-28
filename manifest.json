@@ -1,0 +1,15 @@
+{
+    "name":"Mini PWA",
+    "short_name":"m PWA",
+    "display":"standalone",
+    "start_url":"/",
+    "theme_color":"#ffeeaa",
+    "background_color":"#aaaaee",
+    "icons":[
+        {
+            "src":"a.png",
+            "sizes":"256x256",
+            "type":"image/png"
+        }
+    ]
+}
