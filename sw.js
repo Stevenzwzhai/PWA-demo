@@ -16,6 +16,7 @@ self.addEventListener('install', function(e) {
 	e.waitUntil(
 		caches.open(cacheStorageKey).then(function(cache) {
 			console.log('Adding to Cache:', cacheList)
+			//如果是一些大文件或者不稳定文件可以选择不返回cache.addAll，小文件再返回
 			return cache.addAll(cacheList)
 		}).then(function() {
 			console.log('Skip waiting!')
