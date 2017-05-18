@@ -20,6 +20,7 @@ self.addEventListener('install', function(e) {
 			return cache.addAll(cacheList)
 		}).then(function() {
 			console.log('Skip waiting!')
+			//更新的时候，新的sw不必等待，而是可以直接接管当前页面。
 			return self.skipWaiting()
 		})
 	)
